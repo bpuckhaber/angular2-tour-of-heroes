@@ -3,6 +3,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
+import { VilliansComponent } from './villians.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroService } from './hero.service';
 
@@ -13,6 +14,7 @@ import { HeroService } from './hero.service';
     <nav>
       <a [routerLink]="['Dashboard']">Dashboard</a>
       <a [routerLink]="['Heroes']">Heroes</a>
+      <a [routerLink]="['Villians']">Villians</a>
     </nav>
     <router-outlet></router-outlet>
   `,
@@ -39,6 +41,11 @@ import { HeroService } from './hero.service';
     path: '/heroes',
     name: 'Heroes',
     component: HeroesComponent
+  },
+  {
+    path: '/villians',
+    name: 'Villians',
+    component: VilliansComponent
   }
 ])
 export class AppComponent {

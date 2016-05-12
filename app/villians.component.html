@@ -1,0 +1,19 @@
+<div>
+  <h2>My Villians</h2>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Super Power</th>
+    </tr>
+    <tbody>
+      <tr *ngFor="#villian of rows">
+        <td>{{villian.id}}</td>
+        <td>{{villian.name}}</td>
+        <td>{{villian.superPower}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--<ngTable [rows]="rows" [columns]="columns" (tableChanged)="onChangeTable()">
+  </ngTable>-->
+</div>
